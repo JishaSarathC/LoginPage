@@ -12,22 +12,20 @@ export default function LoginPage(){
         alert("Please fill out this page");
     }
     else if(userName==="user" && password==="password"){
-        setMessage("Welcome, user");
+        setMessage("Welcome, user!");
 
         setUserName("");
         setPassword("");
         
     }else
       {
-        setMessage("Invalid Username or Password");
-    
+        setMessage("Invalid username or password");
     }
-    
-      }
+    }
     return(
         <div>
-            {message==="Welcome, user"? (
-                <h1>Welcome, user</h1>
+            {message==="Welcome, user!"? (
+                <h1>Welcome, user!</h1>
             ):(
                 <>
             <h1>Login Page</h1>
