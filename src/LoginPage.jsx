@@ -7,14 +7,20 @@ export default function LoginPage(){
     function handleSubmit(e){
         e.preventDefault();
   
-    if(userName==="user" && password==="password"){
+    if
+    (userName==="" || password===""){
+        alert("Please fill out this page");
+    }
+    else if(userName==="user" && password==="password"){
         setMessage("Welcome, user");
 
         setUserName("");
         setPassword("");
         
-    }else{
-        setMessage("Invalid Username or Password")
+    }else
+      {
+        setMessage("Invalid Username or Password");
+    
     }
     
       }
